@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript | Strings and Strings Method</title>
+</head>
+<body>
+<div class="container">
+  <h1>This is Heading</h1>
+    <div id="content">
+    This is an Heading
+  </div>
+  <p>This is short Paragraph</p>
+</div>
+<script>
+  var string = ("This");
+  var name = ("Shubham");
+  var channel = ("Shubham's Blog");
+  var message = ('Shubham is a good boy');
+  var temp = (`${name} is a "nice" person and he has a 'channel' called ${channel}`);
+  console.log(string);
+  console.log(string + name + message);
+  console.log(temp);
+  var len = name.length;
+  console.log(len);
+  //To determine length of string
+  console.log(`length of name is ${len}`);
+  console.log("Shubham's blog\n Shubham\t Maurya\r Shaanma");
+  var y= new String("This");
+  console.log(y);
+  document.getElementById("content").innerHTML = '<h3>This is an h3 heading</h3>';
+  
+  document.getElementsByClassName("container").innerHTML= "<p>I Love you Shubham</p>";
+</script>
+</body>
+</html>

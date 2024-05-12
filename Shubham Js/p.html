@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSON Tutorial</title>
+</head>
+<body>
+<div class="container">This is Container</div>
+<script>
+  let jsonObj = {
+Name : "Shubham",
+Channel : "Shubham's Blog",
+Food : "Bhindi",
+Motto : "To me not you",
+friend : "jitendra"
+}
+console.log(jsonObj);
+
+let myjsonstr = JSON.stringify(jsonObj);
+console.log(myjsonstr);
+
+//myjsonstr = myjsonstr.replace('Jitendra','jitu');
+myjsonstr = myjsonstr.replace('jitendra','jitu');
+console.log(myjsonstr);
+
+let newjsonobj = JSON.parse(myjsonstr);
+console.log(newjsonobj);
+
+let boo = {
+  Name : "Shaan",
+  Class : "FYCS",
+}
+console.log(boo);
+let hoo = JSON.stringify(boo);
+console.log(hoo);
+
+let poo = {
+  Name : "Jitendra",
+  Class : "FYBSC",
+}
+console.log(poo);
+let moo = JSON.stringify(poo);
+console.log(moo);
+
+let soo = hoo.toUpperCase(moo);
+console.log(soo);
+
+let roo = hoo + moo;
+console.log(roo);
+
+let foo = JSON.parse(soo);
+console.log(foo)
+</script>
+</body>
+</html>

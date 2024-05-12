@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript-Scope and Conditionals</title>
+</head>
+<body>
+<div class="container">
+  
+</div>
+<div>
+  <ul>
+    <li>Item-1</li>
+    <li>Item-2</li>
+    <li>Item-3</li>
+    <li>Item-4</li>
+    <li>Item-5</li>
+    <li>Item-6</li>
+    <li>Item-7</li>
+  </ul>
+</div>
+<script>
+  var string1 ="This is a string";
+  console.log(string1);
+  
+ let a ='u';
+  {
+    //If we use block it cannot print outside the block if string is inside
+    let a = 'u6';
+    console.log(a);
+  }
+  console.log(a);
+  //The const variable cannot be change throughout the program
+const a6 ='This cannot be changed';
+  console.log(a6);
+  //a6  ='This should be changed';
+ // console.log(a6);
+ let age = 34;
+ if(age>44)
+ { 
+   console.log("You can drink coffee")
+ }
+   else if(age>35)
+ {
+   console.log("Age is <35")
+}
+ //  else if(age>30)
+// {console.log("Age is 34")}
+ else
+ {
+ console.log("You can drink Water");
+ }
+ 
+ const weeks = "Monday";
+ switch (weeks)
+ {
+   case "Tuesday":
+     console.log("This is Tuesday") //break;
+     
+     case "Wednesday":
+       console.log("This is Wednesday") //break;
+       
+    case "Monday":
+    console.log("This is Monday") //break;
+    
+    Default :
+    console.log("None of these") //break;
+ }
+ 
+ let name= 45;
+ if (name >50)
+ {
+   console.log("it is not possible")
+ }
+ else{
+   console.log("it is possible")
+ }
+</script>
+</body>
+</html>
