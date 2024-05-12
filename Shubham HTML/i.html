@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+      background-color: palegoldenrod;
+      margin: 0;
+      padding: 0;
+    }
+    h2{
+      color: red;
+      text-align: center;
+      padding: 20px;
+      font-size: 50px
+    }
+    div.main{
+      background-color: rgba(5, 0, 0, 0.2);
+  width: 80%;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  color: blue;
+  padding: 10px;
+  margin:20px auto 0px auto;
+    }
+    div.register{
+   background-color: rgba(0, 0, 0, 0.2);
+  width: 50%;
+  font-size: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  color:Black;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+    }
+ input#nm{
+  width :300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);}
+  input#pwd{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    padding: 7px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-family: Georgia, serif ;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  </style>
+  <title>Marquee</title>
+</head>
+<body>
+  <h2>I love you</h2>
+  <div class="main">
+   <marquee direction="Left" id="shu">Shubham Maurya</marquee>
+<marquee direction="Right">Shubham</marquee>
+<marquee direction="Up">Shaanma</marquee>
+<marquee direction="Down">Shaan</marquee>
+</div> <!--end of main-->
+<form action="backend.php" id="register" method="post">
+<div class="register">
+  <label for="nm">First Name :</label>
+<input type="text" name="nm" id="nm" placeholder="Enter your First Name"> <br>
+<label for="pwd">Password :</label>
+<input type="password" name="pwd" id="pwd" placeholder="Enter correct Password">
+<a href="ahan.html">Ahan</a>
+</div><!--end of register-->
+</form>
+</body>
+</html>

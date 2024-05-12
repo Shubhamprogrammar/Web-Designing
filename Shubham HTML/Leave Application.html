@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Application for leaving the company">
+  <meta name="author" content="Shubham">
+  <title>Leaving Application</title>
+  <style>
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+   background: url("seagull.jpg");
+   background-position: -400px 0px;
+  }
+    div.register{
+      background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 600px;
+  margin: 200px auto 100px auto;
+    }
+    div.h{
+      text-align: right;
+      padding: 30px;
+      font-family: sans-serif;
+      font-size: 25px;
+     /* float: right;*/
+    }
+    h1{
+      text-align: center;
+      color: ghostwhite;
+      margin: 20px;
+      padding-top:40px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    label{
+      font-family: sans-serif;
+      font-size: 23px;
+      padding: 0px;
+    }
+   form{
+     padding: 0px;
+      margin: 40px;
+    }
+    div.sub{
+     padding: 20px;
+      font-family: sans-serif;
+      font-size: 29px;
+      margin: 20px;
+      border: 2px solid #fff;
+    }
+    pre{
+      padding-left: 40px;
+      font-family: sans-serif;
+      font-size: 25px;
+      padding-top: 20px;
+    }
+    input#dt{
+      width :300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+    input#fr{
+      width: 150px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+    }
+    #reason{
+      border: solid#ddd;
+      background-color: #fff;
+      width: 380px;
+      border-radius: 2px;
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="register">
+    <h1>Leave Application Form</h1>
+    <br> <br>
+  <div class="h">
+  <h2>Swastik Tins pvt. ltd.</h2>
+  <h3>Plot No. 59,60, T.T.C. Industrial Area, </h3>
+  <h3>Khairane M.I.D.C. Navi Mumbai </h3>
+  </div><!--end of h-->
+  <div class="sub">
+    <p>Subject: Application for leave</p>
+  </div><!--end of sub-->
+  <form>
+    <label for="dt">Date :</label>
+     &nbsp;<input type="date" name="dt" id="dt"> <br> <br>
+    <label for="dt">Name :</label>
+    <input type="text" name="nm" id="dt" placeholder="Enter your Name"> <br><br><hr>
+    <div class="main">
+    <label>Department :</label> <br>
+    <input type="radio" name="Should" id="shoulder">
+    &nbsp;
+    <label for="shoulder">Shoulder</label>
+    <input type="radio" name="Should" id="Gardener">
+    &nbsp;
+    <label for="Gardener">Gardener</label>
+    </div> <!--end of main--> <br>
+    <label for="reason">Why you want a leave?</label>
+    <textarea name="reason" id="reason" rows="5" cols="20" placeholder="Reason for Leave"></textarea> <br> <br><hr>
+    <label>Duration Of Leave</label> <br>
+    <label for="fr">From</label> &nbsp;
+    <input type="date" id="fr" name="from"> &nbsp;&nbsp;
+    <label for="fr">To</label> &nbsp;
+    <input type="date" name="to" id="fr"> <br> <br>
+    <label for="dt">Date on which you will be present</label> <br> <br>
+    <input type="date" name="pre" id="dt">
+  </form> 
+  <pre>
+      <p>Supervisor           Head Supervisor         Director Sign.</p>
+  </pre>
+  </div><!--end of register-->
+ </body>
+</html>
